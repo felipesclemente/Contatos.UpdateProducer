@@ -1,0 +1,16 @@
+@Contatos.UpdateProducer_HostAddress = http://localhost:5251
+
+GET {{Contatos.UpdateProducer_HostAddress}}/api/atualizacontato
+Accept: application/json
+
+###
+
+PUT {{Contatos.UpdateProducer_HostAddress}}/api/atualizacontato
+Content-Type: application/json
+
+{
+  "IdContato": 1,
+  "NovoNomeCompleto": "Felipe Sao Clemente"
+}
+
+###
